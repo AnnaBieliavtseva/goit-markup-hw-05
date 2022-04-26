@@ -137,7 +137,7 @@ img {
 
   display: block;
   position: absolute;
-
+  border-radius: 2px;
   height: 4px;
   width: 100%;
   background-color: currentColor;
