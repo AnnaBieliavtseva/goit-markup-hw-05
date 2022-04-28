@@ -38,7 +38,7 @@ img {
   min-width: 100%;
 }
 
-/* Utilities ---------------------------*/
+/* ------------------------Utilities ---------------------------*/
 
 .container {
   width: 1200px;
@@ -67,7 +67,7 @@ img {
   margin: -1px;
 }
 
-/* Header--------------------------------- */
+/*----------------------------------- Header--------------------------------- */
 
 .page-header {
   font-weight: 500;
@@ -100,7 +100,7 @@ img {
   align-items: center;
 }
 
-/* Site-nav---------------------------------- */
+/*-------------------------------- Site-nav---------------------------------- */
 
 .site-nav {
   display: flex;
@@ -118,6 +118,7 @@ img {
 
   color: var(--title-text-color);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-link:hover,
@@ -143,7 +144,7 @@ img {
   background-color: currentColor;
 }
 
-/* Contact-list ---------------------------------*/
+/* ---------------------------Contact-list ---------------------------------*/
 
 .contact-list {
   display: flex;
@@ -159,6 +160,7 @@ img {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list-link:hover,
@@ -170,6 +172,7 @@ img {
   margin-right: 10px;
   display: inline-block;
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list-link:hover .contact-list-icon,
@@ -177,7 +180,7 @@ img {
   fill: var(--accent-color);
 }
 
-/* Section Hero--------------------------------- */
+/*------------------------------ Section Hero--------------------------------- */
 
 .hero {
   background-color: var(--accent-bg-color);
@@ -224,7 +227,7 @@ img {
   cursor: pointer;
 }
 
-/* Section Features -----------------------------*/
+/*------------------------ Section Features -----------------------------*/
 
 .feature-list {
   display: flex;
@@ -260,7 +263,7 @@ img {
   align-items: center;
 }
 
-/* ------------------------------Section About */
+/* ------------------------------Section About ------------------------------*/
 
 .about {
   padding-top: 0px;
@@ -286,7 +289,7 @@ img {
   text-align: center;
 }
 
-/*------------------------------------------ Section Team */
+/*------------------------------------------ Section Team ------------------------------*/
 
 .team {
   background-color: var(--secondary-bg-color);
@@ -333,6 +336,10 @@ img {
   margin-bottom: 30px;
 }
 
+.socials-item + .socials-item {
+  margin-left: 10px;
+}
+
 .socials-link {
   width: 44px;
   height: 44px;
@@ -340,10 +347,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.socials-item + .socials-item {
-  margin-left: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover,
@@ -358,9 +362,10 @@ img {
 
 .socials-icon {
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* -----------------------------------Section Clients */
+/* -----------------------------------Section Clients ----------------------------*/
 
 .clients-list {
   display: flex;
@@ -375,6 +380,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-item:not(:last-child) {
@@ -383,6 +390,7 @@ img {
 
 .clients-icon {
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -395,7 +403,7 @@ img {
   fill: var(--accent-color);
 }
 
-/* ----------------------------------------------------------Footer */
+/* ------------------------------------------------Footer------------------------------------ */
 
 .page-footer {
   padding-top: 60px;
@@ -432,6 +440,7 @@ img {
 
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-link.address {
@@ -462,6 +471,7 @@ img {
 
 .socials-link.footer {
   background-color: var(--icon-bg-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link.footer:hover,
@@ -473,7 +483,7 @@ img {
   fill: var(--primary-white-color);
 }
 
-/*-------------------------------------------------------------Page Portfolio */
+/*--------------------------------------Page Portfolio------------------------------- */
 
 .filters-list {
   display: flex;
@@ -500,6 +510,10 @@ img {
   border: none;
 
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -533,6 +547,7 @@ img {
 
 .card-list-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-list-link:hover,
