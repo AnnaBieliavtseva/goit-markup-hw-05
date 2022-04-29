@@ -358,12 +358,14 @@ img {
 .team-list-text {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
 }
+
+/* --------------------------Socials------------------------ */
 
 .socials-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
 }
 
 .socials-item + .socials-item {
@@ -495,7 +497,7 @@ img {
   margin-bottom: 20px;
 }
 
-.socials-list.footer {
+.socials-list .footer {
   display: flex;
 }
 
@@ -601,12 +603,18 @@ img {
   margin-bottom: 0;
 }
 
-/* .card-list-top-wrap {
+.card-list-top-wrap {
   position: relative;
-} */
+  overflow: hidden;
+}
 
 .card-list-link {
   text-decoration: none;
+}
+
+.card-list-link:hover .card-list-top-text,
+.card-list-link:focus .card-list-top-text {
+  transform: translateY(0%);
 }
 
 .card-list-top-text {
@@ -614,9 +622,12 @@ img {
   top: 0px;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  font-size: 18px;
   line-height: 1.6;
   padding: 63px 24px;
-  /* height: 100%; */
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform var(--primary-transition);
 }
 
 .card-list-text {
