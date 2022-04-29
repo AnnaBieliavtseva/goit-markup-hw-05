@@ -283,16 +283,6 @@ img {
   margin-right: 30px;
 }
 
-.about-list-wrap {
-  position: absolute;
-  display: flex;
-}
-
-.about-list-text {
-  position: absolute;
-}
-
-/* 
 .about-list-item::before {
   content: '';
   position: absolute;
@@ -300,7 +290,7 @@ img {
   height: 70px;
   bottom: 0;
 
-  background-color: var(--primary-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .about-list-text {
@@ -309,8 +299,13 @@ img {
   bottom: 27px;
   left: 50%;
   transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
   color: var(--primary-white-color);
-} */
+  text-align: center;
+}
 
 .about-title,
 .team-title,
